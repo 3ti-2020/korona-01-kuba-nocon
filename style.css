@@ -44,8 +44,9 @@ body{
   }
   .title-logo{
     position: absolute;
+    font-size: 25px;
     left: 50px;
-    top: 30px;
+    top: 35px;
     color: white;
     text-shadow: 3px 3px 7px  black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -63,7 +64,7 @@ body{
   }
   .el-header{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     list-style-type: none;
     text-decoration: none;
     
@@ -224,3 +225,24 @@ table, th, td {
     position: absolute;
     top: 15px;
   }
+
+  .button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.textview{
+  width: 250px;
+  height: 40px;
+  margin: 5px;
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+}
+.kalkulator{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Korona Projekt 01 Kuba Nocoń</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="bg-header"></div>
+        <h1 class="title-logo"><a class="title-every" href="index.html">Elementy Dzieła Muzycznego</a></h1>
+        <ul class="menu-header">
+          <li class="el-header"><a class="el-menu-header" href="index.html">Strona Główna</a></li>
+          <li class="el-header"><a class="el-menu-header" href="index1.html">Czym są?</a></li>
+          <li class="el-header"><a class="el-menu-header" href="index2.html">Poszczególne Elementy</a></li>
+          <li class="el-header"><a class="el-menu-header" href="index3-kk.html">Kalkulator-JS</a></li>
+          <li class="el-header"><a class="el-menu-header" href="dane.php">Tabela PHP</a></li>
+        </ul>
+      </div>
+      <div class="left-sidebar">
+        <div class="bg-left"></div>
+        <h3 class="left-top">Elementy:</h3>
+        <ul class="left-menu">
+          <li class="left-menu-el">Melodyka</li>
+          <li class="left-menu-el">Rytmika</li>
+          <li class="left-menu-el">Dynamika</li>
+          <li class="left-menu-el">Agogika</li>
+          <li class="left-menu-el">Artykulacja</li>
+          <li class="left-menu-el">Harmonia</li>
+          <li class="left-menu-el">Kolorystyka</li>
+        </ul>
+      </div>
+      <div class="main">
+          <div class="kalkulator">
+        <form name="form">
+            <input class="textview" name="textview">
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="C" onclick="clean()"></td>
+                    <td><input class="button" type="button" value="<" onclick="back()"> </td>
+                    <td><input class="button" type="button" value="/" onclick="insert('/')"> </td>
+                    <td><input class="button" type="button" value="*" onclick="insert('*')"> </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="insert(7)"> </td>
+                    <td><input class="button" type="button" value="8" onclick="insert(8)"> </td>
+                    <td><input class="button" type="button" value="9" onclick="insert(9)"> </td>
+                    <td><input class="button" type="button" value="-" onclick="insert('-')"> </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="insert(4)"> </td>
+                    <td><input class="button" type="button" value="5" onclick="insert(5)"> </td>
+                    <td><input class="button" type="button" value="6" onclick="insert(6)"> </td>
+                    <td><input class="button" type="button" value="+" onclick="insert('+')"> </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="insert(1)"> </td>
+                    <td><input class="button" type="button" value="2" onclick="insert(2)"> </td>
+                    <td><input class="button" type="button" value="3" onclick="insert(3)"> </td>
+                    <td rowspan="5"><input style="height: 102px;" class="button" type="button" value="=" onclick="equal()"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="button" style="width: 102px;" type="button" value="0" onclick="insert(0)"> </td>
+                    <td><input class="button" type="button" value="." onclick="insert('.')"> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+      </div>
+      <div class="footer">
+        <h1 class="footer-text">Dziękuję że tutaj jesteś!</h1>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
